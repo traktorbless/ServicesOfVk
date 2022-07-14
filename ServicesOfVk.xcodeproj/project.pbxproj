@@ -14,6 +14,7 @@
 		5DCC029328801F1D0056A63A /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCC029228801F1D0056A63A /* Service.swift */; };
 		5DCC0295288028EC0056A63A /* RowOfServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCC0294288028EC0056A63A /* RowOfServiceView.swift */; };
 		5DCC0297288029CD0056A63A /* ListOfServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCC0296288029CD0056A63A /* ListOfServicesView.swift */; };
+		5DCC029B288042A00056A63A /* ServicesAppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCC029A288042A00056A63A /* ServicesAppViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		5DCC029228801F1D0056A63A /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		5DCC0294288028EC0056A63A /* RowOfServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowOfServiceView.swift; sourceTree = "<group>"; };
 		5DCC0296288029CD0056A63A /* ListOfServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfServicesView.swift; sourceTree = "<group>"; };
+		5DCC029A288042A00056A63A /* ServicesAppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesAppViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				5DCC0284288018C50056A63A /* ServicesOfVkApp.swift */,
+				5DCC029C288046400056A63A /* ViewModel */,
 				5DCC0298288037B20056A63A /* View */,
 				5DCC0299288037C90056A63A /* Model */,
 				5DCC0288288018C70056A63A /* Assets.xcassets */,
@@ -90,6 +93,14 @@
 				5DCC029228801F1D0056A63A /* Service.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5DCC029C288046400056A63A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5DCC029A288042A00056A63A /* ServicesAppViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +177,7 @@
 				5DCC0285288018C50056A63A /* ServicesOfVkApp.swift in Sources */,
 				5DCC029328801F1D0056A63A /* Service.swift in Sources */,
 				5DCC0295288028EC0056A63A /* RowOfServiceView.swift in Sources */,
+				5DCC029B288042A00056A63A /* ServicesAppViewModel.swift in Sources */,
 				5DCC0297288029CD0056A63A /* ListOfServicesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,35 +8,18 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State var services = [Service]()
+    @StateObject var servicesApp = ServicesApp()
     
     var body: some View {
         NavigationView {
-            ListOfServicesView(services: services)
+            ListOfServicesView(services: servicesApp.services)
             .task {
-                await loadData()
+                await servicesApp.loadData()
             }
             .navigationTitle("Сервисы VK")
             .navigationBarTitleDisplayMode(.inline)
             
         }
-    }
-    
-    func loadData() async {
-        guard let url = URL(string: "https://publicstorage.hb.bizmrg.com/sirius/result.json") else { return }
-        
-        do {
-            let (data, _) = try await URLSession.shared.data(from: url)
-            
-            if let decodedResponse = try? JSONDecoder().decode(Response.self, from: data) {
-                services = decodedResponse.body.services
-            } else {
-                print("Invalid decode")
-            }
-        } catch {
-            print("Invalid data")
-        }
-                            
     }
 }
 
