@@ -13,17 +13,6 @@ struct ListOfServicesView: View {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 struct ListOfServices_Previews: PreviewProvider {
     static var previews: some View {
         ListOfServicesView(services: [Service(name: "ВКонтакте", description: "Самая популярная соцсеть и первое суперприложение в России", link: "https://vk.com/", icon_url: "https://publicstorage.hb.bizmrg.com/sirius/vk.png")])

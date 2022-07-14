@@ -12,12 +12,18 @@ struct HomeView: View {
     
     var body: some View {
         NavigationView {
-            ListOfServicesView(services: servicesApp.services)
-            .task {
-                await servicesApp.loadData()
+            if !servicesApp.services.isEmpty {
+                ListOfServicesView(services: servicesApp.services)
+                    .navigationTitle("Сервисы VK")
+                    .navigationBarTitleDisplayMode(.inline)
+            } else {
+                ErrorHomeView()
+                    .navigationTitle("Сервисы VK")
+                    .navigationBarTitleDisplayMode(.inline)
             }
-            .navigationTitle("Сервисы VK")
-            .navigationBarTitleDisplayMode(.inline)
+        }
+        .task {
+            await servicesApp.loadData()
         }
         .refreshable {
             Task {

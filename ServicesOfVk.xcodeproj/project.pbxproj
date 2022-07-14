@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5DA17F9128805BDC00C0B6A5 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA17F9028805BDC00C0B6A5 /* SafariView.swift */; };
+		5DA17F93288069B800C0B6A5 /* ErrorHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA17F92288069B800C0B6A5 /* ErrorHomeView.swift */; };
 		5DCC0285288018C50056A63A /* ServicesOfVkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCC0284288018C50056A63A /* ServicesOfVkApp.swift */; };
 		5DCC0287288018C50056A63A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCC0286288018C50056A63A /* HomeView.swift */; };
 		5DCC0289288018C70056A63A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DCC0288288018C70056A63A /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		5DA17F9028805BDC00C0B6A5 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		5DA17F92288069B800C0B6A5 /* ErrorHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHomeView.swift; sourceTree = "<group>"; };
 		5DCC0281288018C50056A63A /* ServicesOfVk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServicesOfVk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCC0284288018C50056A63A /* ServicesOfVkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesOfVkApp.swift; sourceTree = "<group>"; };
 		5DCC0286288018C50056A63A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				5DCC0286288018C50056A63A /* HomeView.swift */,
 				5DCC0296288029CD0056A63A /* ListOfServicesView.swift */,
 				5DA17F9028805BDC00C0B6A5 /* SafariView.swift */,
+				5DA17F92288069B800C0B6A5 /* ErrorHomeView.swift */,
 				5DCC0294288028EC0056A63A /* RowOfServiceView.swift */,
 			);
 			path = View;
@@ -180,6 +183,7 @@
 				5DCC0285288018C50056A63A /* ServicesOfVkApp.swift in Sources */,
 				5DCC029328801F1D0056A63A /* Service.swift in Sources */,
 				5DCC0295288028EC0056A63A /* RowOfServiceView.swift in Sources */,
+				5DA17F93288069B800C0B6A5 /* ErrorHomeView.swift in Sources */,
 				5DCC029B288042A00056A63A /* ServicesAppViewModel.swift in Sources */,
 				5DCC0297288029CD0056A63A /* ListOfServicesView.swift in Sources */,
 				5DA17F9128805BDC00C0B6A5 /* SafariView.swift in Sources */,

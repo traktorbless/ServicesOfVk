@@ -41,7 +41,6 @@ struct RowOfServiceView: View {
             } label: {
                 EmptyView()
             }
-
         }
         .onTapGesture {
             if let url = service.getUrlOfLink {
