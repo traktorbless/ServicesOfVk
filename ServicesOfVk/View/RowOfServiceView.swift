@@ -33,13 +33,21 @@ struct RowOfServiceView: View {
             .frame(width: 250, height: 75, alignment: .leading)
     
             NavigationLink {
+                if let url = service.getUrlOfLink {
+                    SafariView(url: url)
+                } else {
+                    Text("INVALID URL")
+                }
             } label: {
+                EmptyView()
             }
 
         }
         .onTapGesture {
-            if UIApplication.shared.canOpenURL(service.getUrlOfLink!) {
-                UIApplication.shared.open(service.getUrlOfLink!)
+            if let url = service.getUrlOfLink {
+                if UIApplication.shared.canOpenURL(url) {
+                    UIApplication.shared.open(url)
+                }
             }
         }
     }

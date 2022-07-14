@@ -18,7 +18,11 @@ struct HomeView: View {
             }
             .navigationTitle("Сервисы VK")
             .navigationBarTitleDisplayMode(.inline)
-            
+        }
+        .refreshable {
+            Task {
+                await servicesApp.loadData()
+            }
         }
     }
 }
