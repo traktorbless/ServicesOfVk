@@ -13,8 +13,20 @@ struct Service: Codable {
     let link: String?
     let icon_url: String?
     
-    var getUrl: URL? {
+    var getUrlOfLink: URL? {
         URL(string: link ?? "")
+    }
+    
+    var getUrlOfImage: URL? {
+        URL(string: icon_url ?? "")
+    }
+    
+    var unwrappedName: String {
+        name ?? "Неизвестное имя"
+    }
+    
+    var unwrappedDescription: String {
+        description ?? "Описание отсутсвует"
     }
 }
 
