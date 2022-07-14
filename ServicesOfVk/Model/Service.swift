@@ -29,11 +29,3 @@ struct Service: Codable {
         description ?? "Описание отсутсвует"
     }
 }
-
-struct Response: Codable {
-    var body: Services
-    
-    struct Services: Codable {
-        var services = [Service]()
-    }
-}

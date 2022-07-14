@@ -25,4 +25,12 @@ class ServicesApp: ObservableObject {
             print("Invalid data")
         }
     }
+    
+    private struct Response: Codable {
+        var body: Services
+        
+        struct Services: Codable {
+            var services = [Service]()
+        }
+    }
 }
