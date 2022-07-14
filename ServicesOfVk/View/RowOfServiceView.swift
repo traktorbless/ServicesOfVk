@@ -31,11 +31,15 @@ struct RowOfServiceView: View {
                 Spacer()
             }
             .frame(width: 250, height: 75, alignment: .leading)
-            
+    
             NavigationLink {
-                
             } label: {
-                EmptyView()
+            }
+
+        }
+        .onTapGesture {
+            if UIApplication.shared.canOpenURL(service.getUrlOfLink!) {
+                UIApplication.shared.open(service.getUrlOfLink!)
             }
         }
     }
